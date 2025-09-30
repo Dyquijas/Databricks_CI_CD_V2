@@ -1,4 +1,4 @@
-name: Dynamic Databricks Notebook Deploy
+name: Dynamic Databricks Notebook Deploy 1
 on:
   push:
     branches:
@@ -199,7 +199,7 @@ jobs:
       run: |
         DEST_HOST=${{ secrets.DATABRICKS_DEST_HOST }}
         DEST_TOKEN=${{ secrets.DATABRICKS_DEST_TOKEN }}
-        WORKFLOW_NAME="WF_ADB"
+        WORKFLOW_NAME="WF_ADB_2"
         
         echo "Validando la configuración del workflow creado..."
         
@@ -252,4 +252,3 @@ jobs:
         echo "   - tarea2_notebook2 (ntbk_2)"
         echo "Cluster: Serverless configurado"
         echo ""
-        echo "Accede a tu workspace de Databricks para ver el workflow en la sección 'Workflows'"
